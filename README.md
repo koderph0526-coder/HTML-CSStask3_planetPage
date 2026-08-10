@@ -1,4 +1,4 @@
-# Fakta som kan vær egreit å ha
+# Fakta som kan være greit å ha
 
 # jupiters 6 største måner:
 
