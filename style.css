@@ -1,5 +1,54 @@
+/* Reset Layout of default page styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primaryColor: #090020;
+  --secondaryColor: #481877;
+  --buttonBg: url(/img/starryButtons.jpg);
+
+  /* Space to make standard fonts and colors below */
+  --standardFontColor: #fffef0;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--secondaryColor);
+  padding: 10px;
+}
+
+.navBtnCont {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 30px;
+}
+
+.navBtn {
+  background-color: var(--secondaryColor);
+  shape-image-threshold: inherit;
+  color: var(--standardFontColor);
+  font-size: large;
+  width: 5.6rem;
+  height: 2.2rem;
+  border: 0px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navBtn:hover {
+  background-color: var(--buttonBg);
+  transform: scale(1.2);
 }
