@@ -1,5 +1,16 @@
+/* Reset Layout of default page styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primaryColor: #090020;
+  --secondaryColor: #481877;
+  --buttonBg: url(./img/starryButtons.jpg);
+
+  /* Space to make standard fonts and colors below */
+  --standardFontColor: rgb(255, 254, 240);
 }
