@@ -1,3 +1,12 @@
+# Etter å ha landet på et design i Figma,
+
+- Link til Figma design:
+  https://www.figma.com/design/NB0kAh4spTplOu4x0RXLxK/Untitled?node-id=34-59&t=e8GPkc9bATwjZqmN-0
+
+- Nå som vi er kommer til enighet om designet i Figma, har vi inndelt det slik at vi arbeider med annenhver Section med tilhørende styling. Legges inn som kommentarer slik at det er lett å finne frem til i koden både for oss selv og andre.
+
+- Kom også frem til enighet om at vi skal bruke section class name som basis for alle class name innad i section, altså da at om en section heter f.ex "heroSplash", så blir alle class names for chil elementer i denne section kallt f.ex "heroP" for heroParagraph eller "heroImg" etc.
+
 # Fakta som kan være greit å ha
 
 # Kilder på sider som er tatt i bruk for fakta og bilder:
