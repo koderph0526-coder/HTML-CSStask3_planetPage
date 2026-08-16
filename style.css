@@ -15,7 +15,7 @@
   --standardFontColor: rgb(255, 254, 240);
 }
 
-/* Styling for Parallax */
+/* Styling for the Parallax section */
 
 @keyframes zoomOut {
   from {
@@ -25,6 +25,12 @@
     transform: scale(1);
   }
 }
+#heroH1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 .parallaxContainer {
   height: 300vh;
   position: relative;
@@ -62,4 +68,23 @@
   z-index: 2;
   text-align: center;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for the Mythology section */
+#mythoH2 {
+  display: flex;
+  justify-content: center;
+}
+.mythoArticle {
+  padding: 30px;
+}
+#mythoArticleImg {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#mythoArticleP {
+  display: flex;
+  flex-direction: column;
 }
