@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Css Variables */
 :root {
   /* Colors */
   --primaryColor: #090020;
@@ -19,6 +20,11 @@ body {
   background-color: var(--primaryColor);
 }
 
+img {
+  width: 100%;
+}
+
+/* Styling for Navigation and button within it */
 .navContainer {
   display: flex;
   flex-direction: row;
@@ -33,22 +39,37 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  gap: 30px;
+  gap: 15px;
 }
 
 .navBtn {
   background-color: var(--secondaryColor);
-  shape-image-threshold: inherit;
+  shape-image-threshold: inherit; /*Might not need this?*/
   color: var(--standardFontColor);
   font-size: large;
-  width: 5.6rem;
+  width: 8rem;
   height: 2.2rem;
-  border: 0px;
-  border-radius: 50%;
-  transition: transform 0.2s ease-in-out;
+  border: 1px none;
+  border-radius: 30px;
+  padding: 5px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .navBtn:hover {
-  background-color: var(--buttonBg);
+  background-image: var(--buttonBg);
   transform: scale(1.2);
+  cursor: pointer;
+  /* Fix smoother transition and blend for backgroundImg here, hint Opacity! */
 }
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navContainer .navBtnCont {
+  position: sticky;
+  animation: scroll(root);
+}
+
+/* Styling for Moons section and grid */

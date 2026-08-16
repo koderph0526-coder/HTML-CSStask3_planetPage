@@ -19,6 +19,9 @@ Kilder på sider som er tatt i bruk for fakta og bilder:
   https://www.o-fagspatruljen.no/astronomi/jupiter
   https://no.wikipedia.org/wiki/Jupiters_m%C3%A5ner
 
+- Nasa Link
+  https://science.nasa.gov/jupiter/
+
 # Jupiters 6 største måner:
 
 - Ganymedes: Solsystemets største måne. Den er større enn planeten Merkur.
