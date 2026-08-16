@@ -11,6 +11,7 @@
   --primaryColor: #090020;
   --secondaryColor: #481877;
   --buttonBg: url(/img/starryButtons.jpg);
+  --moonCards: #dbd2e7;
 
   /* Space to make standard fonts and colors below */
   --standardFontColor: #fffef0;
@@ -73,3 +74,53 @@ a {
 }
 
 /* Styling for Moons section and grid */
+.jupiterMoons {
+  margin: 5rem 15rem 5rem 15rem;
+} /*if time add a parallax effext that lest the grid slide into place as user scrolls?*/
+
+.moonCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4rem;
+}
+
+.moonCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--moonCards);
+  color: var(--primaryColor);
+  width: 17rem;
+  height: 20rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+} /* FIX RESPONSIVE CSS!! --> check the rest of the page too!*/
+
+.moonsImg {
+  width: 12.5rem;
+}
+
+/* Layout styling for Nasa Section, div paragraph and imgConatainer */
+.nasaInfoCont {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  justify-content: space-between;
+  margin: 5rem 12rem 5rem 12rem;
+}
+
+.nasaPs {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  color: var(--standardFontColor);
+  gap: 3rem;
+}
+
+.nasaImgCont {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  justify-content: left;
+}
