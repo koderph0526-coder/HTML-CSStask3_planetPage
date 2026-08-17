@@ -5,14 +5,17 @@
   box-sizing: border-box;
 }
 
+/* Css Variables */
 :root {
   /* Colors */
   --primaryColor: #090020;
   --secondaryColor: #481877;
-  --buttonBg: url(./img/starryButtons.jpg);
+  --buttonBg: url(/img/starryButtons.jpg);
+  --moonCards: #dbd2e7;
 
   /* Space to make standard fonts and colors below */
-  --standardFontColor: rgb(255, 254, 240);
+  --standardFontColor: #fffef0;
+  --effectFont: #faffbf;
 }
 
 body {
@@ -154,3 +157,214 @@ footer {
 a {
   color: var(--standardFontColor);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primaryColor);
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/* Styling for Navigation and button within it */
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--secondaryColor);
+  padding: 10px;
+}
+
+.navBtnCont {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 15px;
+}
+
+.navBtn {
+  background-color: var(--secondaryColor);
+  shape-image-threshold: inherit; /*Might not need this?*/
+  color: var(--standardFontColor);
+  font-size: large;
+  width: 8rem;
+  height: 2.2rem;
+  border: 1px none;
+  border-radius: 30px;
+  padding: 5px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navBtn:hover {
+  background-image: var(--buttonBg);
+  color: var(--effectFont);
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: inset 0px 0px 8px 4px var(--secondaryColor);
+  /* Fix smoother transition and blend for backgroundImg here, hint Opacity! */
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navContainer .navBtnCont {
+  position: sticky;
+  animation: scroll(root);
+}
+
+/* Styling for Moons section and grid */
+.jupiterMoons {
+  /* margin: 10rem 16rem auto; */
+  justify-content: space-evenly;
+  margin-left: 5%;
+  /* Not sentered the way I want yet, nor is it responsive design...  the 15rem works on my screen, 20 rem works on bigger screen, FIX THIS*/
+  color: var(--standardFontColor);
+  text-align: center;
+} /*if time add a parallax effext that lest the grid slide into place as user scrolls?*/
+
+.jupiterMoons > p {
+  padding: 2rem;
+}
+
+.moonsHeader {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.moonCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+  column-gap: 2rem;
+}
+
+.moonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--moonCards);
+  color: var(--primaryColor);
+  width: 22rem;
+  height: 27.5rem;
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+} /* FIX RESPONSIVE CSS!! --> check the rest of the page too!*/
+
+.moonCard p {
+  color: var(--primaryColor);
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+}
+
+.moonCard a {
+  color: var(--secondaryColor);
+}
+
+.moonsImg {
+  width: 14rem;
+  height: 14rem;
+  overflow: hidden;
+  margin: 0.3rem 0rem 0.5rem 0rem;
+  padding: 0.5rem;
+}
+
+/* Layout styling for Nasa Section, div paragraph and imgConatainer */
+.nasaInfoCont {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  justify-content: space-between;
+  background-color: #170051;
+  margin: 10rem;
+  padding: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  border-radius: 30px;
+}
+
+.nasaPs {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  color: var(--standardFontColor);
+  gap: 3rem;
+}
+
+.nasaPs > a {
+  color: var(--standardFontColor);
+  font-size: larger;
+  transition: transform 0.3s ease-in-out;
+}
+.nasaPs > a:hover {
+  transform: scale(1.1);
+  color: var(--effectFont);
+  text-shadow: 2px 2px 12px #dbd2e7;
+}
+
+.nasaImgCont {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  justify-content: left;
+  margin-top: 1.5rem;
+}
+
+/* Image gallery Styling */
+.galleryImgCont {
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 6rem;
+}
+
+.galleryPzoomIn {
+  display: flex;
+  background-image: url("/img/galler/SolarBlenderImg.jpg");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.galleryZooming {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  /* overflow: hidden; */
+  margin: 9.5rem 15% auto;
+  width: 75vw;
+  background-size: unset;
+  /* NOTE: Images need fixing YES, but since this isn't what I had in mind... */
+}
+
+.galleryImgs {
+  height: 18rem;
+  width: 18rem;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+
+/* .galleryZout {
+  min-width: 50%;
+  position: sticky;
+} */
+
+/* .galleryParallax1 {
+  display: flex;
+  flex-direction: column;
+  width: none;
+  gap: 3rem;
+} */

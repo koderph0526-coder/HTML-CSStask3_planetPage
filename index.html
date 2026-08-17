@@ -16,7 +16,14 @@
     <!-- Polly Codes -->
     <header class="navContainer">
       <!-- Remember to fix dropdowm activating on :hover, as it should collapse when user scrolls on the page -->
-      <nav class="">button</nav>
+      <nav class="navBtnCont">
+        <a class="navBtn" href="#heroSplash">Home</a>
+        <a class="navBtn" href="#moonPart">Måner</a>
+        <a class="navBtn" href="#solarParallax">Solsystemet</a>
+        <a class="navBtn" href="#nasaInfo">NASA</a>
+        <a class="navBtn" href="#jupiterMythology">Fun Facts</a>
+        <a class="navBtn" href="#galleryJupiter">Galleri</a>
+      </nav>
     </header>
     <main>
       <!-- Tony codes -->
@@ -44,8 +51,168 @@
         </div>
       </section>
       <!-- Polly Codes -->
-      <section class="jupiterMoons">
-        <div class="moonCont"></div>
+      <section class="jupiterMoons" id="moonPart">
+        <h2 class="moonsHeader">Jupiters Måner</h2>
+        <p>
+          Her er en visning av 6 av jupiters største måner, fra størst til
+          minst. De fire første er navngitt "de galileiske månene" av oppdageren
+          Gallileo Gallilei.
+        </p>
+        <div class="moonCont">
+          <article class="moonCard">
+            <h3>Ganymedes</h3>
+            <a
+              target="_blank"
+              href="https://no.wikipedia.org/wiki/Ganymedes_(m%C3%A5ne)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Ganymede_g1_true_2.jpg?utm_source=no.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+                  alt="Månen Ganymedes, overflaten er en slående kontrast mellom gamle, mørke og sterkt kraterfylte områder og yngre, lyse områder med intrikate, parallelle riller og furer."
+                />
+                <!-- Image source, wikipedia: https://no.wikipedia.org/wiki/Ganymedes_(m%C3%A5ne) -->
+              </figure>
+            </a>
+            <p>
+              Foto:
+              <a href="https://no.wikipedia.org/wiki/Galileo_(romsonde)">
+                Galileo (Sonde)</a
+              >
+            </p>
+            <p>
+              Solsystemets og Jupiters største måne. Den er større enn planeten
+              Merkur med hele 8% bredere diameter, men massen er kun 45 % av
+              Merkurs.
+            </p>
+          </article>
+          <article class="moonCard">
+            <h3>Callisto</h3>
+            <a
+              target="_blank"
+              href="https://no.wikipedia.org/wiki/Callisto_(m%C3%A5ne)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Callisto.jpg/500px-Callisto.jpg?utm_source=no.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                  alt="Månen Callisto, stor og rund med varierende mørke og lyse grå, nesten spranglende fra alle kraterene, overflate"
+                />
+              </figure>
+            </a>
+            <p>
+              Foto:<a href="https://no.wikipedia.org/wiki/Galileo_(romsonde)">
+                Galileo (Sonde)</a
+              >
+              <!-- Image source, wikipedia: https://no.wikipedia.org/wiki/Callisto_(m%C3%A5ne) -->
+            </p>
+            <p>
+              Den nest største, tungt kratersatt og svært gammel overflate. Den
+              er nesten like stor som Merkur, men er ca. 33% av massen til
+              planeten Merkur.
+            </p>
+          </article>
+          <article class="moonCard">
+            <h3>Io</h3>
+            <a
+              target="_blank"
+              href="https://no.wikipedia.org/wiki/Io_(m%C3%A5ne)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Io_highest_resolution_true_color.jpg/500px-Io_highest_resolution_true_color.jpg?utm_source=no.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                  alt="Månen Io har en nesten gulaktig overflatefarge med mørkere, noen rød-brune, sirkler og kratere grunnet masse vulkansk aktivitet."
+                />
+              </figure>
+            </a>
+            <p>
+              Foto:<a href="https://no.wikipedia.org/wiki/Galileo_(romsonde)">
+                Galileo (Sonde)</a
+              >
+              <!-- Image source, wikipedia: https://no.wikipedia.org/wiki/Io_(m%C3%A5ne) -->
+            </p>
+            <p>
+              Den tredje største, kjent for ekstrem vulkansk aktivitet. Io er 3
+              642 km i diameter, som da tilsvarer ca 75% av Merkur sin størrelse
+              i diameter.
+            </p>
+          </article>
+          <article class="moonCard">
+            <h3>Europa</h3>
+            <a
+              target="_blank"
+              href="https://no.wikipedia.org/wiki/Europa_(m%C3%A5ne)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Europa-moon.jpg/500px-Europa-moon.jpg?utm_source=no.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                  alt="Månen Europa har en glatt, lys rødbrun og lyseblå isball dekket av et intrikat mønster av mørke sprekker, riller og linjer som kan minne om knust eggeskall eller spindelvev. "
+                />
+              </figure>
+            </a>
+            <p>
+              Foto:<a href="https://no.wikipedia.org/wiki/Galileo_(romsonde)">
+                Galileo (Sonde)</a
+              >
+              <!-- Image source, wikipedia: https://no.wikipedia.org/wiki/Europa_(m%C3%A5ne) -->
+            </p>
+            <p>
+              Den fjerde største, dekket av is med et flytende hav under. Europa
+              har en diameter på ca. 3 121 kilometer, altså om lag 64 % av
+              Merkurs størrelse i diameter.
+            </p>
+          </article>
+          <article class="moonCard">
+            <h3>Amalthea</h3>
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Amalthea_(moon)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Amalthea_Voyager-1.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+                  alt="Månen Amalthea, en liten, uregelmessig formet og svært rød måne."
+                />
+              </figure>
+            </a>
+            <p>
+              Foto:<a href="https://en.wikipedia.org/wiki/Voyager_1">
+                Voyager 1 (Sonde)</a
+              >
+              <!-- Image source, wikipedia: https://en.wikipedia.org/wiki/Amalthea_(moon) -->
+            </p>
+            <p>
+              Den femte største, en liten, uregelmessig formet og svært rød
+              innre måne. Diameteren er ca. 167 km, Amaltheas gjennomsnittlige
+              diameter utgjør omtrent 3,4 % av Merkurs diameter.
+            </p>
+          </article>
+          <article class="moonCard">
+            <h3>Himalia</h3>
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Himalia_(moon)"
+            >
+              <figure class="moonsImg">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cassini-Huygens_Image_of_Himalia.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+                  alt="Utydelig, pixeleret bilde av Himalia, da den er så liten at det har vært vanskelig å få gode bilder av den"
+                />
+              </figure>
+            </a>
+            <p>
+              Foto:<a
+                href="https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens"
+              >
+                Cassini (Sonde)</a
+              >
+              <!-- Image source, wikipedia: https://en.wikipedia.org/wiki/Himalia_(moon) -->
+            </p>
+            <p>
+              Den største av Jupiters ytre, uregelmessige måner. Diameteren er
+              på omtrent 140 kilometer, Merkur er ca 35 ganger større i
+              diameter, altså 2,9 % av Merkurs diameter.
+            </p>
+          </article>
+        </div>
       </section>
       <!-- Tony codes -->
       <section class="solarSystemParallax">
@@ -54,7 +221,63 @@
         </div>
       </section>
       <!-- Polly Codes -->
-      <section class="nasaInfo"></section>
+      <section class="nasaInfoCont" id="nasaInfo">
+        <div class="nasaPs">
+          <h3>Nasa - Utforsker Jupiter</h3>
+          <p>
+            De første detaljerte observasjonene av Jupiter ble gjort av Galileo
+            Galilei i 1610 med et lite, hjemmelaget teleskop.
+          </p>
+          <!-- Both these paragraphs are placeholder text collected from Nasa's own page -->
+          <p>
+            I den senere tid har denne planeten blitt studert av romfartøyer,
+            sonder og romfartøy som passerer forbi på vei til andre verdener.
+            NASAs Juno-romfartøy studerer for tiden kjempeplaneten fra bane.
+            Europa Clipper ble skutt opp 14. oktober 2024 for å studere Jupiters
+            iskalde måne, Europa.
+          </p>
+          <h3>Voyager's "Blue Movie" of Jupiter.</h3>
+          <p>
+            This is the original Voyager "Blue Movie" (so named because it was
+            built from Blue filter images). It records the approach of Voyager 1
+            during a period of over 60 Jupiter days. Notice the difference in
+            speed and direction of the various zones of the atmosphere. The
+            interaction of the atmospheric clouds and storms shows how dynamic
+            the Jovian atmosphere is. Image Credit: NASA/JPL-Caltech
+          </p>
+          <h3>Juno: 10 Years in Orbit around Jupiter</h3>
+          <p>
+            Five years after leaving Earth to make the 1.7 billion-mile journey
+            (2.8 billion kilometers), the Juno spacecraft entered orbit around
+            Jupiter on July 4, 2016. Through an intricate and critical series of
+            procedures — which could have doomed the mission, but the spacecraft
+            performed almost flawlessly — Juno maneuvered into the grasp of the
+            King of Planets, ready to unlock its secrets. The orbiter has been
+            capturing breakthrough science and breathtaking images ever since.
+          </p>
+          <a href="https://science.nasa.gov/science-missions/" target="_blank"
+            >Read more from 'Juno Enters Orbit Around Jupiter'</a
+          >
+
+          <!-- Transelate the above!! -->
+          <!-- Source: https://science.nasa.gov/image-detail/pia02855-4/ -->
+        </div>
+        <!-- Images collected/fetched from Nasa's own page -->
+        <div class="nasaImgCont">
+          <figure class="nasaVoyager">
+            <img
+              src="https://science.nasa.gov/wp-content/uploads/2024/04/pia02855.gif"
+              alt="Balck and white clip of jupiter that was recorded as Voyager approached the planet"
+            />
+          </figure>
+          <figure class="nasaTakeOff">
+            <img
+              src="https://science.nasa.gov/wp-content/uploads/2024/10/europa-clipper-as-it-lifts-off.jpg?resize=768,512"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
       <!-- Tony codes -->
       <section id="jupiterMythology">
         <h2 id="mythoH2">Fun Fact:Jupiter i mytologi</h2>
@@ -108,7 +331,42 @@
         </div>
       </section>
       <!-- Polly Codes -->
-      <section></section>
+      <section class="galleryImgCont" id="galleryJupiter">
+        <div class="galleryPzoomIn">
+          <figure class="galleryZooming">
+            <!-- <img src="./img/galler/SolarBlenderImg.jpg" alt="" /> -->
+            <img
+              class="galleryImgs"
+              src="./img/galler/nasaPlanetSystem.jpg"
+              alt=""
+            />
+            <img
+              class="galleryImgs"
+              src="./img/galler/RedStormJupiter.jpg"
+              alt=""
+            />
+            <img
+              class="galleryImgs"
+              src="./img/galler/moonFamilyPortrait.jpg"
+              alt=""
+            />
+          </figure>
+          <!-- <div class="galleryParallax1">
+
+          </div> -->
+          <!-- I have some plans, but making a proof of concept and attempting to fix the page to fit the assignment for the time being -->
+        </div>
+
+        <!-- <div class="galleryPzoomOut">
+          <figure class="galleryZout">
+            <img src="./img/galler/ganymedesByJupiter.jpg" alt="" />
+          </figure>
+        </div> -->
+        <!-- <figure><img src="" alt="" /></figure>
+        <figure><img src="" alt="" /></figure>
+        <figure><img src="" alt="" /></figure> -->
+        <!-- Again: I have plans, in specific to use the parallax effect to zoom in and out for different images, probably also using animation and keyframes. -->
+      </section>
     </main>
     <!-- Tony codes -->
     <footer id="footer">
