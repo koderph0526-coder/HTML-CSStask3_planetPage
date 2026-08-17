@@ -15,15 +15,35 @@
   --standardFontColor: rgb(255, 254, 240);
 }
 
-/* Styling for the Parallax section */
+body {
+  background-color: var(--primaryColor);
+  color: var(--standardFontColor);
+}
 
-@keyframes zoomOut {
+/* Styling for the Parallax sections */
+
+@keyframes moveLeftToRight {
   from {
-    transform: scale(3);
+    transform: translateX(-70%) scale(1.5);
   }
+
   to {
-    transform: scale(1);
+    transform: translateX(30%) scale(1.5);
   }
+}
+
+#jupiterSplash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  animation-name: moveLeftToRight;
+  animation-timeline: --zoom-timeline;
+  animation-timing-function: linear;
+  animation-range: entry 0% exit 100%;
 }
 #heroH1 {
   display: flex;
@@ -32,7 +52,7 @@
 }
 
 .parallaxContainer {
-  height: 300vh;
+  height: 100vh;
   position: relative;
   view-timeline-name: --zoom-timeline;
   view-timeline-axis: block;
@@ -49,28 +69,36 @@
   width: 100%;
 }
 
-#jupiterSplash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation-timeline: --zoom-timeline;
-  animation-name: zoomOut;
-  animation-timing-function: linear;
-
-  animation-range: entry 0% exit 100%;
-}
-
 .parallaxContent {
   position: relative;
-  z-index: 2;
+  background: #09002044;
+
   text-align: center;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
+#solarSPImg {
+  height: 700px;
+  background-image: url(img/jupiterParallax.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#solarSPH2 {
+  background: #09002066;
+}
+
 /* Styling for the Mythology section */
+#mythoImg {
+  border-radius: 7px;
+}
+
 #mythoH2 {
   display: flex;
   justify-content: center;
@@ -87,4 +115,10 @@
 #mythoArticleP {
   display: flex;
   flex-direction: column;
+  padding: 30px;
+  align-items: center;
+}
+
+.mythoP {
+  padding: 10px;
 }
