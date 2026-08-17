@@ -18,6 +18,145 @@
   --effectFont: #faffbf;
 }
 
+body {
+  background-color: var(--primaryColor);
+  color: var(--standardFontColor);
+}
+
+/* Styling for the Parallax sections */
+
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(-70%) scale(1.5);
+  }
+
+  to {
+    transform: translateX(30%) scale(1.5);
+  }
+}
+
+#jupiterSplash {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  animation-name: moveLeftToRight;
+  animation-timeline: --zoom-timeline;
+  animation-timing-function: linear;
+  animation-range: entry 0% exit 100%;
+}
+#heroH1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.parallaxContainer {
+  height: 100vh;
+  position: relative;
+  view-timeline-name: --zoom-timeline;
+  view-timeline-axis: block;
+}
+
+.parallaxSticky {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.parallaxContent {
+  position: relative;
+  background: #09002088;
+
+  text-align: center;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+#solarSPImg {
+  height: 700px;
+  background-image: url(img/jupiterParallax.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#solarSPH2 {
+  background: #09002099;
+}
+
+/* Styling for the Mythology section */
+#jupiterMythology {
+  background-color: var(--secondaryColor);
+  margin: 50px;
+  border-radius: 7px;
+}
+
+.mythoParallelP {
+  background-color: var(--primaryColor);
+  border-radius: 7px;
+}
+
+#mythoImg {
+  border-radius: 7px;
+}
+
+#mythoH2 {
+  display: flex;
+  justify-content: center;
+}
+.mythoArticle {
+  padding: 30px;
+}
+#mythoArticleImg {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#mythoArticleIntro {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+}
+
+.mythoP {
+  padding: 10px;
+}
+
+#mythoParallel {
+  display: flex;
+  padding: 20px;
+  gap: 5%;
+}
+
+#mythoParallelH2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: var(--standardFontColor);
+}
 html {
   scroll-behavior: smooth;
 }

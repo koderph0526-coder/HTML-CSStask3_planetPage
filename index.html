@@ -8,6 +8,7 @@
       content="A semanticly correct coded page about a planet of our choosing to display skills in a group project"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="png" href="img/jupiterIcon.png" />
     <script src="script.js" defer></script>
     <title>Jupiter - HTML og CSS oppgave 3</title>
   </head>
@@ -26,14 +27,28 @@
     </header>
     <main>
       <!-- Tony codes -->
-      <section class="heroSplash">
+      <section id="heroSplash">
         <!-- Welcome text and img splash, p tag with top wiki text? -->
-        <p>
-          Jupiter er den femte planeten fra solen og den største planeten i
-          solsystemet. Den er over dobbelt så massiv som alle de andre planetene
-          til sammen, og er 318 ganger større enn jorden. Planeten er veldig lik
-          en stjerne, men den ble aldri stor nok til å begynne å brenne.
-        </p>
+        <h1 id="heroH1">Jupiter</h1>
+        <div class="parallaxContainer">
+          <div class="parallaxSticky">
+            <img
+              id="jupiterSplash"
+              src="img/JupiterBannerAdjusted.jpg"
+              alt="Parallax av Jupiter omringet av verdensrommets mørke."
+            />
+            <div class="parallaxContent">
+              <h2 class="heroText">Utforsk Jupiter</h2>
+              <p id="heroP" class="heroText">
+                Jupiter er den femte planeten fra solen og den største planeten
+                i solsystemet. Den er over dobbelt så massiv som alle de andre
+                planetene til sammen, og er 318 ganger større enn jorden.
+                Planeten er veldig lik en stjerne, men den ble aldri stor nok
+                til å begynne å brenne.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Polly Codes -->
       <section class="jupiterMoons" id="moonPart">
@@ -200,7 +215,11 @@
         </div>
       </section>
       <!-- Tony codes -->
-      <section></section>
+      <section class="solarSystemParallax">
+        <div id="solarSPImg">
+          <h2 id="solarSPH2">Jupiter i solsystemet</h2>
+        </div>
+      </section>
       <!-- Polly Codes -->
       <section class="nasaInfoCont" id="nasaInfo">
         <div class="nasaPs">
@@ -260,7 +279,57 @@
         </div>
       </section>
       <!-- Tony codes -->
-      <section></section>
+      <section id="jupiterMythology">
+        <h2 id="mythoH2">Fun Fact:Jupiter i mytologi</h2>
+        <article class="mythoArticle" id="mythoArticleImg">
+          <img
+            src="img/gudJupiter.jpg"
+            id="mythoImg"
+            alt="Maleri av guden Jupiter malt av Jean Ingres i 1811. Det viser han på en trone i himmelen med en kvinne og en ørn ved hans side."
+          />
+        </article>
+
+        <article class="mythoArticle" id="mythoArticleIntro">
+          <p class="mythoP">
+            Visste du at planeten Jupiter er oppkalt etter den Romerske
+            gudekongen Jupiter, gud for himmel, lys og torden? Dette er spesielt
+            passende da det er den største planeten i solsystemet vårt, og den
+            da guder over de andre.
+          </p>
+          <p class="mythoP">
+            Jupiter er ikke den eneste guden i familitreet en planet er navgitt
+            fra! Andre eksempler inkluderer hans far, Saturn, brødre Pluto og
+            Neptun, og sønn, Mars!
+          </p>
+        </article>
+
+        <!-- Parallels between the planet and God, Jupiter -->
+        <div class="mythoParallelContainer">
+          <h2 id="mythoParallelH2">Paralleler mellom Guden og planeten</h2>
+          <article id="mythoParallel">
+            <p class="mythoParallelP">
+              Guden Jupiter var kjent som menneskehetens og statens store
+              beskytter. Planeten Jupiter fungerer som et kosmisk skjold for
+              jorden. På grunn av sin enorme tyngdekraft trekker den til seg,
+              eller svinger unna, farlige asteroider og kometer som ellers kunne
+              ha truffet oss.
+            </p>
+            <p class="mythoParallelP">
+              Guden bar en hvit toga og var assosiert med fargen hvit og lys.
+              Planeten er det fjerde lyseste objektet på himmelen (etter solen,
+              månen og Venus) og skinner med et stabilt, klart, hvitt lys som
+              dominerer nattehimmelen.
+            </p>
+            <p class="mythoParallelP">
+              Guden Jupiter var mest kjent som tordenguden som kastet lyn (hans
+              fremste våpen). Planeten Jupiter er preget av de mest voldsomme
+              stormene i solsystemet, med konstante, gigantiske elektriske
+              lynglimt i atmosfæren som er tusen ganger kraftigere enn lyn på
+              jorden.
+            </p>
+          </article>
+        </div>
+      </section>
       <!-- Polly Codes -->
       <section class="galleryImgCont" id="galleryJupiter">
         <div class="galleryPzoomIn">
@@ -300,6 +369,15 @@
       </section>
     </main>
     <!-- Tony codes -->
-    <footer></footer>
+    <footer id="footer">
+      <article class="credits">
+        <p>Solar Parallax by Daniel Roberts from Pixabay</p>
+        <p>
+          Favicon by
+          <a href="https://www.flaticon.com/" target="_blank">flaticon</a>
+        </p>
+      </article>
+      <article></article>
+    </footer>
   </body>
 </html>
