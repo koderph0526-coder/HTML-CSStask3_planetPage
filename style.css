@@ -94,6 +94,17 @@ body {
 }
 
 /* Styling for the Mythology section */
+#jupiterMythology {
+  background-color: var(--secondaryColor);
+  margin: 50px;
+  border-radius: 7px;
+}
+
+.mythoParallelP {
+  background-color: var(--primaryColor);
+  border-radius: 7px;
+}
+
 #mythoImg {
   border-radius: 7px;
 }
@@ -132,4 +143,14 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+}
+
+footer {
+  background-color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: var(--standardFontColor);
 }
