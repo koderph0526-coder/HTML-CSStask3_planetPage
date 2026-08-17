@@ -78,13 +78,13 @@ img {
   transform: scale(1.2);
   cursor: pointer;
   box-shadow: inset 0px 0px 8px 4px var(--secondaryColor);
-  /* Fix smoother transition and blend for backgroundImg here, hint Opacity! */
 }
 
 a {
   text-align: center;
   text-decoration: none;
 }
+/* NOTE TO SELF: fix collapse and dropDown on hover styling asap */
 
 .navContainer .navBtnCont {
   position: sticky;
@@ -97,7 +97,7 @@ a {
 
 @keyframes moveLeftToRight {
   from {
-    transform: translateX(-70%) scale(1.5);
+    transform: translateX(-60%) scale(1.5);
   }
 
   to {
@@ -117,10 +117,14 @@ a {
   animation-timing-function: linear;
   animation-range: entry 0% exit 100%;
 }
+
 #heroH1 {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 1.5rem;
+  /* Birb minor edit */
+  padding-top: 1rem;
+  font-size: 2.5rem;
 }
 
 .parallaxContainer {
@@ -154,16 +158,17 @@ a {
 /* ------------Polly code Styling - Second segment -----------*/
 
 /* Styling for Moons section and grid */
-.jupiterMoons {
+.moonsJupiter {
   /* margin: 10rem 16rem auto; */
   justify-content: space-evenly;
   margin-left: 5%;
   /* Not sentered the way I want yet, nor is it responsive design...  the 15rem works on my screen, 20 rem works on bigger screen, FIX THIS*/
   color: var(--standardFontColor);
   text-align: center;
+  margin-bottom: 8rem;
 } /*if time add a parallax effext that lest the grid slide into place as user scrolls?*/
 
-.jupiterMoons > p {
+.moonsJupiter > p {
   padding: 2rem;
 }
 
@@ -286,6 +291,10 @@ a {
 .mythoParallelP {
   background-color: var(--primaryColor);
   border-radius: 7px;
+}
+
+.mythCont {
+  width: 22rem;
 }
 
 #mythoImg {
