@@ -16,6 +16,7 @@ Kilder på sider som er tatt i bruk for fakta og bilder:
   https://unsplash.com/s/photos/solar-system
   https://unsplash.com/s/photos/jupiter-planet-free
   https://unsplash.com/s/photos/jupiter-mythology
+  https://pixabay.com/images/search/jupiter/
 - Facts
   https://no.wikipedia.org/wiki/Jupiter
   https://www.o-fagspatruljen.no/astronomi/jupiter
