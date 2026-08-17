@@ -76,29 +76,46 @@ a {
 /* Styling for Moons section and grid */
 .jupiterMoons {
   margin: 5rem 15rem 5rem 15rem;
+  color: var(--standardFontColor);
+  text-align: center;
 } /*if time add a parallax effext that lest the grid slide into place as user scrolls?*/
+
+.jupiterMoons h2 p {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
 
 .moonCont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 4rem;
+  row-gap: 3rem;
+  column-gap: 2rem;
 }
 
 .moonCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: var(--moonCards);
   color: var(--primaryColor);
-  width: 17rem;
-  height: 20rem;
+  width: 19rem;
+  height: 24rem;
+  margin-top: 1.5rem;
   padding: 1.2rem;
   border-radius: 20px;
 } /* FIX RESPONSIVE CSS!! --> check the rest of the page too!*/
 
+.moonCard p {
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+}
+
 .moonsImg {
-  width: 12.5rem;
+  width: 13rem;
+  height: 13rem;
+  overflow: hidden;
+  margin: 0.3rem 0rem 0.3rem 0rem;
 }
 
 /* Layout styling for Nasa Section, div paragraph and imgConatainer */
