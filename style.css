@@ -24,6 +24,7 @@ html {
 
 body {
   background-color: var(--primaryColor);
+  overflow-x: hidden;
 }
 
 img {
@@ -82,8 +83,10 @@ a {
 
 /* Styling for Moons section and grid */
 .jupiterMoons {
-  margin: 5rem 20rem 5rem 21rem;
-  /* Not sentered the way I want yet, nor is it responsive design... */
+  /* margin: 10rem 16rem auto; */
+  justify-content: space-evenly;
+  margin-left: 5%;
+  /* Not sentered the way I want yet, nor is it responsive design...  the 15rem works on my screen, 20 rem works on bigger screen, FIX THIS*/
   color: var(--standardFontColor);
   text-align: center;
 } /*if time add a parallax effext that lest the grid slide into place as user scrolls?*/
@@ -100,7 +103,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3rem;
-  column-gap: 0.2rem;
+  column-gap: 2rem;
 }
 
 .moonCard {
@@ -170,23 +173,59 @@ a {
 .nasaImgCont {
   display: flex;
   flex-direction: column;
-  max-width: 35%;
+  max-width: 45%;
   justify-content: left;
-  padding: 4rem;
+  margin-top: 1.5rem;
 }
 
 /* Image gallery Styling */
-.galleryImGCont {
-  max-width: 90vw;
-  display: flex;
-  flex-direction: row;
-  margin: 5rem 20rem 5rem 21rem;
-  padding: 1rem;
+.galleryImgCont {
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 6rem;
 }
 
-.galleryParallax1 {
+.galleryPzoomIn {
+  display: flex;
+  background-image: url("/img/galler/SolarBlenderImg.jpg");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.galleryZooming {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  /* overflow: hidden; */
+  margin: 9.5rem 15% auto;
+  width: 75vw;
+  background-size: unset;
+  /* NOTE: Images need fixing YES, but since this isn't what I had in mind... */
+}
+
+.galleryImgs {
+  height: 18rem;
+  width: 18rem;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+
+/* .galleryZout {
+  min-width: 50%;
+  position: sticky;
+} */
+
+/* .galleryParallax1 {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: none;
   gap: 3rem;
-}
+} */
